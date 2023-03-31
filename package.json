@@ -17,10 +17,12 @@
   },
   "scripts": {
     "AllTest": "wdio run ./wdio.conf.js",
-    "oneTest": "wdio run ./wdio.conf.js --spec ./test/specs/LoginTest.js",
+    "oneTest": "wdio run ./wdio.conf.js --spec ./test/specs/loginPageTest.js",
     "baseTest": "wdio run ./wdio.conf.js --spec ./test/specs/baseTest.js",
     "runSuite": "wdio wdio.conf.js --suite end2end",
-    "allureReport": "allure generate allure-results/ --clean && allure open"
+    "allureReport": "allure generate allure-results/ --clean && allure open",
+    "homeTest": "wdio run ./wdio.conf.js --spec ./test/specs/homePageTest.js",
+    "delayTest": "wdio run ./wdio.conf.js --spec ./test/specs/loadDelayPageTest.js"
   },
   "dependencies": {
     "allure-commandline": "^2.21.0"

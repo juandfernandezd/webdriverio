@@ -1,7 +1,6 @@
 import { default as Page } from "./Page.js";
 
-
-class LoginPage extends Page {
+export class LoginPage extends Page {
     
     get inputUsername() { return $('#username');}
     get inputPassword() { return $('#password');}
@@ -19,5 +18,3 @@ class LoginPage extends Page {
     }
 
 }
-
-export default new LoginPage();

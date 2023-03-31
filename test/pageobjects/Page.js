@@ -1,12 +1,11 @@
 export default class Page {
 
     async open() {
-        await browser.url('https://rahulshettyacademy.com/loginpagePractise/');
+        await browser.url('http://uitestingplayground.com/');
     }
 
     async open(path) {
-        await browser.url(`/${path}`)
-
+        await browser.url(path)
     }
 
 }
